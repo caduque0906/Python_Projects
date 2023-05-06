@@ -1,2 +1,2 @@
-# Python_Projects
-This is where all Python Projects will be at.
+# Python Projects
+This is a display of sample code using Python Language.
