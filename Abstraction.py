@@ -7,6 +7,8 @@ class Pokemon(ABC):
     def Pikachu(self, move):
         print("Pikachu's strongest attack is ", move)
 
+    
+    @abstractmethod
     #passing argument for child class
     def Raichu(self, move):
         pass
