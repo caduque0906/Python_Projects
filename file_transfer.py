@@ -85,10 +85,10 @@ class ParentWindow(Frame):
             modification_time = os.path.getmtime(file_path)
             dateTimeFile = datetime.datetime.fromtimestamp(modification_time)
             # Shows time difference of file placed in folder from current time
-            time_difference = current_time - modification_time
+            time_difference = current_time - time_threshold
 
             # Checks to see if file is older than 24 hours
-            if time_difference > dateTimeFile:
+            if time_difference < dateTimeFile:
                 # moves each file form the source to the destination
                 shutil.move(source + '/' + i, destination)
                 print(i + ' was successfully transferred.')
