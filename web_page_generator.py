@@ -38,6 +38,7 @@ class ParentWindow(Frame):
 
     # Function to return the Input data   
     def submitHTML(self):
+        # Made variable get input data from self.inputText
         htmlText = self.inputText.get()
         htmlFile = open("index.html", "w")
         htmlContent = "<html>\n<body>\n<h1>" + htmlText + "</h1>\n</body>\n</html>"
